@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סטוקל׳ה - יש לנו את זה!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    nav {
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #d32f2f;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1582407947304-8c589fd6ac5d') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: #f4b400;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .categories, .products {
+      padding: 40px 20px;
+    }
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .card p {
+      font-size: 16px;
+      color: #d32f2f;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>סטוקל׳ה</h1>
+    <span>יש לנו את זה!</span>
+  </header>
+  <nav>
+    <a href="#">דף הבית</a>
+    <a href="#categories">קטגוריות</a>
+    <a href="#products">מוצרים</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+
+  <section class="hero">
+    <h2>ברוכים הבאים לסטוקל׳ה</h2>
+    <p>כל מה שצריך לבית - במקום אחד</p>
+    <button>קנה עכשיו</button>
+  </section>
+
+  <section class="categories" id="categories">
+    <h2 class="section-title">קטגוריות פופולריות</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1c15116" alt="מטבח">
+        <h3>מטבח</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606813902794-b3b7e1c8acb3" alt="נוי ועיצוב">
+        <h3>נוי ועיצוב</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1625871181373-4c65e7207c16" alt="אחסון">
+        <h3>אחסון וארגון</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2 class="section-title">המוצרים החמים</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="A_promotional_advertisement_in_Hebrew_for_artifici.png" alt="דשא סינטטי">
+        <h3>דשא סינטטי</h3>
+        <p>₪89.9</p>
+      </div>
+      <div class="card">
+        <img src="מתלה.webp" alt="מתלה כביסה">
+        <h3>מתלה כביסה</h3>
+        <p>₪129.9</p>
+      </div>
+      <div class="card">
+        <img src="מצלמה-דיגיטלית.jpg" alt="מצלמה לילדים">
+        <h3>מצלמה לילדים</h3>
+        <p>₪49.9</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>סטוקל׳ה ירושלים | כל הזכויות שמורות © 2025</p>
+  </footer>
+</body>
+</html>
