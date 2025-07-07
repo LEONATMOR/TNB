@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סטוקל׳ה - יש לנו את זה!</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        direction: rtl;
+    }
+    header {
+        background-color: #d32f2f;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+    }
+    .logo {
+        width: 100px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+    }
+    .product {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 1em;
+        width: 250px;
+        text-align: center;
+    }
+    .product img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #222;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-area">
+      <img src="logo.png" alt="לוגו סטוקל׳ה" class="logo">
+      <h1>סטוקל׳ה</h1>
+      <p class="tagline">יש לנו את זה!</p>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#products">מוצרים</a></li>
+        <li><a href="#deals">מבצעים</a></li>
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>ברוכים הבאים לסטוקל׳ה!</h2>
+      <p>מבחר מוצרים לכל הבית במחירים של פעם.</p>
+      <a href="#products" class="cta-button">לכל המוצרים</a>
+    </div>
+  </section>
+
+  <main id="products">
+    <!-- מוצרים יוטענו דינמית כאן -->
+  </main>
+
+  <footer id="contact">
+    <p>© כל הזכויות שמורות לסטוקל׳ה</p>
+    <p>ירושלים | 050-0000000 | stockla@email.com</p>
+  </footer>
+</body>
+</html>
